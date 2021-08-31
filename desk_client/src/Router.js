@@ -11,6 +11,8 @@ const analyticsDashboard = lazy(() =>
   import("./views/dashboard/analytics/AnalyticsDashboard")
 )
 
+
+
 const select = lazy(() => import("./views/forms/form-elements/select/Select"))
 const switchComponent = lazy(() =>
   import("./views/forms/form-elements/switch/Switch")

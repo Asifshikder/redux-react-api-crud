@@ -10,13 +10,18 @@ import { store } from "./desk_client/redux/actions/store"
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ToastProvider } from "react-toast-notifications";
 import { Container } from "@material-ui/core";
+// import Router from "./Router"
+
 const App = props => {
   // return <Router />
  return (
   <Provider store={store}>
   <ToastProvider autoDismiss={true}>
     <Container maxWidth="lg">
+  <Router>
       <Country />
+
+  </Router>
     </Container>
   </ToastProvider>
    </Provider>
